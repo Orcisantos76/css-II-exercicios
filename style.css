@@ -1,24 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 header{
-    border-bottom: 1px solid black;
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid black;
   }
+.paragrafos{
+  width: 80%;
+  /*border: solid 2px blue;*/
+  margin: 20px;
+  text-align: justify;
+  padding: 10px;
+  border: 3px solid greenyellow;
+}
   
   main{
+    margin: auto;
     width: 800px;
+    padding-bottom: 100px;
   }
   
   aside{
-    width: 180px;
+    position: fixed;    
+    right: 0;
+    width: 18%;
+    bottom: calc(100% - 85vh);
     border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    
   }
   
   footer{
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
     background-color: black;
     color: white;
     width: 100%;
+    height: 30px;
   }
   
   button{
     background-color: black;
     color: white;
     font-family: serif;
+  }
+  .aside-conteudo:has(button:active){
+    background: black;
+    color: white;
+  }
+  button:active{
+    background: white;
+    color: black;
   }
